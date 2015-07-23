@@ -2,6 +2,12 @@
 
 The missing stopwatch for Erlang.
 
+## Getting Started
+
+`chronus` is a simple application that leverages on Erlang's metaprogramming
+capabilities to provide Erlang developers with a tool to measure how long does
+it take for a particular function to finish its work.
+
 
 ## Author(s)
 
