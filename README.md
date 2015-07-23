@@ -8,6 +8,19 @@ The missing stopwatch for Erlang.
 capabilities to provide Erlang developers with a tool to measure how long does
 it take for a particular function to finish its work.
 
+```erlang
+application:start(chronus).
+
+Opts = [{file, "/tmp/chronus.output"}].
+
+Pid  = chronus:start(Opts).
+
+MFAs = [{proplists, get_value, 2}].
+ok   = chronus:time(MFAs, Pid).
+
+ok   = chronus:stop(Pid).
+```
+
 
 ## Author(s)
 
